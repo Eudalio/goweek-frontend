@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import api from '../services/api'
+import api from '../services/api';
 
 import like from '../like.svg';
 import './Tweet.css';
 
 class Tweet extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {  };
-	}
-
 	handleClick = async () => {
 		const { _id } = this.props.tweet
 
